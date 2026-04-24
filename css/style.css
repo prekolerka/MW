@@ -1,0 +1,403 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(22, 37, 22);
+    margin: 30px 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/e82da519-a3f6-4488-99c0-10b5fe8b39a1.png') center/cover no-repeat;
+  filter: blur(16px);
+  z-index: -1;
+}
+.main {
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    background-image: url('../assets/bg.png');
+    
+    background-size: inherit;
+    min-height: 90vh;
+    background-color: #131c0d;
+
+    border-radius: 20px;
+    border: 1px solid #dece87;
+    
+}
+.header {
+    background-color: #162516e6;
+    border-radius: 20px 20px 0 0;
+   
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+    padding: 0;
+    align-items: center;
+}
+.header__logo {
+}
+.logo__img {
+    width: 70px;
+}
+.nav__list {
+    display: flex ;
+    list-style: none;
+    justify-content: space-around;
+    gap: 50px;
+
+    
+    font-size: 16px;
+}
+.nav__element a{
+    color: #dece87;
+}
+.hero {
+    display: flex;
+    padding: 100px ;
+    color: #dece87;
+    gap: 50px;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+.hero__left {
+    max-width: 500px;
+}
+.hero__title {
+    font-size: 80px;
+    font-family: "Cinzel", serif;
+    margin: 0;
+}
+.hero__subtitle {
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 50px;
+}
+.enter-btn {
+    
+  background: linear-gradient(
+    135deg,
+    #c6a75e,
+    #e6d3a3
+  );
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(198,167,94,0.4);
+  transition: 0.3s;
+  font-size: 25px;
+
+}
+.enter-btn:hover {
+    box-shadow: 0px 0px 15px #dece87;
+    transform: translateY(-2px);
+}
+.card-day__img{
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #060a06;
+    
+}
+.hero__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: rgba(22, 37, 22, 0.25);
+backdrop-filter: blur(3px);
+border: 1px solid #dece87;
+
+    padding: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px black;
+}
+.hero__pull {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.pull-btn {
+    background: linear-gradient(
+    135deg,
+    #c6a75e,
+    #e6d3a3
+  );
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(198,167,94,0.4);
+  transition: 0.3s;
+  font-size: 25px;
+  width: 60%;
+  margin: 0 auto;
+}
+.pull-btn:hover {
+    box-shadow:  0 0 10px #dece87;
+    transform: translateY(-2px);
+}
+
+
+
+
+.tarot-card {
+    width: 300px;
+    height: 380px;
+    margin: 20px auto;
+    perspective: 1000px;
+}
+
+.tarot-card__inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.tarot-card.is-flipped .tarot-card__inner {
+    transform: rotateY(180deg);
+}
+
+.tarot-card__front,
+.tarot-card__back {
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.tarot-card__front img,
+.tarot-card__back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* лицевая */
+.tarot-card__front {
+    transform: rotateY(180deg);
+}
+
+/* задняя (обложка) */
+.tarot-card__back {
+    transform: rotateY(0);
+}
+
+
+
+.second {
+    /* background-color: #162516e6; */
+border: 1px solid #dece87;
+border-radius: 20px;
+
+margin: 50px;
+}
+.second__title {
+    font-size: 40px;
+    font-family: "Cinzel", serif;
+    color: #dece87;
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    
+}
+.cards {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 30px;
+}
+.card {
+    
+    /* border: 1px solid #dece87; */
+    border-radius: 10px;
+    box-shadow:  0 0 15px #17231591;
+    backdrop-filter: blur(5px);
+    background-color: #0f190e3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  transition: 0.3s;
+}
+.card a {
+    text-decoration: none;
+     background: linear-gradient(
+    135deg,
+    #c6a75e,
+    #e6d3a3
+  );
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(198,167,94,0.4);
+  transition: 0.3s;
+  font-size: 20px;
+
+  margin-bottom: 10px;
+  
+}
+/* .card__title {
+    font-size: 25px;
+    font-family: "Spectral", serif;
+    color: #dece87;
+    text-align: center;
+    margin-bottom: 10px;
+} */
+.card__img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card__desc {
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    color: #dece87;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.desc {
+    color: #dece87;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.desc__title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.desc__text {
+    text-align: center;
+    font-size: 20px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.ask {
+    text-decoration: none;
+     background: linear-gradient(
+    135deg,
+    #c6a75e,
+    #e6d3a3
+  );
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(198,167,94,0.4);
+  transition: 0.3s;
+  font-size: 20px;
+
+    
+}
+.footer {
+    background-color: #162516e6;
+    border-radius: 0 0 20px 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px 10px 50px;
+}
+.footer__logo {
+}
+.footer__text {
+    color: #dece87;
+    font-family: "Cinzel", serif;
+}
+.footer__socials {
+    display: flex;
+    gap: 10px;
+}
+.footer__tg img, .footer__inst img, 
+.footer__tiktok img{
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .nav{
+        flex-direction: column;}
+    .nav__list {
+        gap: 15px;
+        padding: 0;
+    }
+    .hero {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+.hero__title {
+    font-size: 56px;
+    font-family: "Cinzel", serif;
+    margin: 0;
+}
+.hero__subtitle {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 50px;
+}
+.cards {flex-direction: column;
+    
+}
+.second{
+    margin: 20px;
+}
+.second__title {
+    font-size: 25px;
+font-family: "Raleway", sans-serif;
+font-weight: normal;
+padding: 10px;
+text-align: center;
+width: 70%;
+        margin: 0 auto;}
+
+    .desc__text {
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+    }
+    .desc__title {
+        font-size: 30px;
+        margin: 20px;
+    }
+    .tarot-card {
+    width: 100%;}
+
+}

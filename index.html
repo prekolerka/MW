@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mossy World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <main class="main">
+        <div class="container">
+            <header class="header">
+                <div class="nav">
+                    <a href="#" class="header__logo"><img class="logo__img" src="./assets/logo.PNG" alt="logo"></a>
+                    <ul class="nav__list">
+                        <li class="nav__element"><a href="">Артефакты</a></li>
+                        <li class="nav__element"><a href="">Сеанс</a></li>
+                        <li class="nav__element"><a href="">Игра</a></li>
+                        <li class="nav__element"><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+            </header>
+            <section class="hero">
+                <div class="hero__left">
+                    <h1 class="hero__title">Mossy<br> World</h1>
+                    <p class="hero__subtitle">Мир, который растёт из тумана и свободы. Здесь артефакты - не просто
+                        предметы, а следы состояний, чувств и настроений. Это пространство, где природа и цифровая
+                        реальность соединяются в единый поток.
+                    </p>
+                    <a href="#second" class="enter-btn">Исследовать</a>
+                </div>
+
+
+                <div class="hero__right">
+                    <span class="hero__pull">Вытяни карту дня</span>
+                    <div class="tarot-card" id="tarotCard">
+                        <div class="tarot-card__inner">
+
+                            <!-- лицевая сторона -->
+                            <div class="tarot-card__front">
+                                <img src="./assets/cards/card.png" alt="card" id="cardFront">
+                            </div>
+
+                            <!-- обратная сторона -->
+                            <div class="tarot-card__back">
+                                <img src="./assets/cards/card-back.jpg" alt="card back">
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="pull-btn" id="pullBtn">Тянуть</button>
+                </div>
+
+
+            </section>
+            <section class="second" id="second">
+                <h2 class="second__title">Погрузись в Mossy World</h2>
+                <div class="cards">
+                    <div class="card">
+                        <!-- <p class="card__title">Артефакты</p> -->
+                        <img src="./assets/artefacts.png" alt="" class="card__img">
+                        <p class="card__desc">Магические предметы ручной работы</p>
+                        <a href="#">Выбрать</a>
+                    </div>
+                    <div class="card">
+                        <!-- <p class="card__title">Сеанс</p> -->
+                        <img src="./assets/layouts.png" alt="" class="card__img">
+                        <p class="card__desc">Тихие сеансы погружения внутрь себя</p>
+                        <a href="#">Записаться</a>
+                    </div>
+                    <div class="card">
+                        <!-- <p class="card__title">Игра</p> -->
+                        <img src="./assets/game.png" alt="" class="card__img">
+                        <p class="card__desc">Твой личный мир <br>.</p>
+                        <a href="#">Играть</a>
+                    </div>
+                    <div class="card">
+                        <!-- <p class="card__title">Контакты</p> -->
+                        <img src="./assets/contacts.png" alt="" class="card__img">
+                        <p class="card__desc">Напиши по любому вопросу, я отвечу</p>
+                        <a href="#">Связаться</a>
+                    </div>
+                </div>
+
+            </section>
+            <section class="desc">
+                <h3 class="desc__title">Об этом мире</h3>
+                <p class="desc__text">
+                    Mossy World — это пространство для тихого погружения в себя. <br> Здесь можно найти артефакты ручной
+                    работы, созданные как маленькие якоря состояний: для памяти, силы, защиты или настроения.<br>
+
+
+
+                    В разделе сеансов тебя ждут мягкие практики с картами и рунами — не про предсказания, а про честный
+                    разговор с собой, поиск опоры и новых смыслов. <br>
+
+
+
+                    А игра станет отдельным миром внутри Mossy World: туманным путём, где можно отмечать свои шаги,
+                    собирать символы, открывать истории и постепенно двигаться к своей версии свободы.
+                </p>
+                <a href="" class="ask">Написать создательнице</a>
+            </section>
+            <footer class="footer">
+                <a href="#" class="footer__logo"><img src="./assets/logo.PNG" alt="logo" class="logo__img"></a>
+                <p class="footer__text">Mossy World 2026</p>
+                <div class="footer__socials">
+                    <a href="" class="footer__tg"><img src="./assets/tg.png" alt="tg"></a>
+                    <a href="" class="footer__inst"><img src="./assets/inst.png" alt="inst"></a>
+                    <a href="" class="footer__tiktok"><img src="./assets/tiktok.png" alt="tiktok"></a>
+                </div>
+            </footer>
+
+
+
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
