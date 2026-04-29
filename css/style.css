@@ -231,7 +231,7 @@ margin: 50px;
 }
 .card {
     
-    /* border: 1px solid #dece87; */
+    border: 1px solid #131c0d;
     border-radius: 10px;
     box-shadow:  0 0 15px #17231591;
     backdrop-filter: blur(5px);
@@ -344,6 +344,125 @@ margin: 50px;
 .footer__tiktok img{
     width: 50px;
 }
+
+
+
+/* АРТЕФАКТЫ */
+
+.artefacts__desc {
+    text-align: center;
+}
+.art__title {
+    color: #dece87;
+    font-family: "Cinzel", serif;
+    font-size: 45px;
+    margin: 20px;
+}
+.art__subtitle {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 30px;
+    color: #dece87;
+    
+}
+
+.art__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+.art-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    background-color: rgba(22, 37, 22, 0.25);
+backdrop-filter: blur(3px);
+border: 1px solid #dece87;
+
+    padding: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px black;
+    height: 450px;
+}
+.art-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+.art__img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.art__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.9);
+}
+.art-card:hover .art__img img {
+  filter: brightness(1);
+}
+.art-card__title{
+   border-top: 1px solid #dece87;
+   padding-top: 10px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+  
+    color: #dece87;
+    margin: 10px;
+
+}
+.art-card__desc {
+    padding: 0 20px ;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+    color: #dece87;
+    text-align: center;
+    margin-top: 0;
+}
+.art-card__price{
+      padding: 0 20px ;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 20px;
+    color: #dece87;
+    text-align: center;
+    text-shadow: 0 0 5px #000;
+    border: 1px solid #c6a75e;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+.take-btn {
+     background: linear-gradient(
+    135deg,
+    #c6a75e,
+    #e6d3a3
+  );
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(198,167,94,0.4);
+  transition: 0.3s;
+  font-size: 18px;
+
+}
+.take-btn:hover {
+    box-shadow: 0px 0px 15px #dece87;
+    transform: translateY(-2px);
+}
+
+
 
 @media (max-width: 768px) {
     .hero {
